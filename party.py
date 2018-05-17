@@ -26,14 +26,16 @@ print("\n\t ~ Thanks for answering " + name + ".")
 sleep(1)
 
 bring = input("\n ~ Will you be bringing anything? (Yes/No): ")
+bring = bring.casefold()
 sleep(0.5)
 
-if bring == "Yes":
+if bring == "yes":
     bringing = input("\n\t ~ What will you be bringing? ")
+    bringing = bringing.casefold()
     sleep(0.5)
     print("\n\t ~ Thank you " + name + ".")
     sleep(1)
-if bring == "No":
+if bring == "no":
     print("\n\t ~ That's okay, " + name + ".")
     sleep(1)
 
@@ -53,14 +55,15 @@ print("\n\t ~ You said you will be bringing " + bringing + ".")
 sleep(1)
 
 confirmation = input("\n ~ Is this all correct? (Yes/No): ")
+confirmation = confimation.casefold()
 sleep(0.5)
 
-if confirmation == "Yes":
+if confirmation == "yes":
     sleep(1)
     print("\n\t ~ Great! Can't wait to see you there " + name + ".")
     sleep(1)
     quit()
-if confirmation == "No":
+if confirmation == "no":
     sleep(1)
     print("\n\t ~ That's too bad," + name + ".")
     sleep(1)
