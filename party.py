@@ -1,5 +1,5 @@
-## Simple python party thingo
-## Jibreil, May 2018
+## simple python party thing
+## jibreil, may 2018
 
 from time import sleep
 
